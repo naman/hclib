@@ -37,7 +37,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <unistd.h>
 #include <cassert>
 
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 
 struct SimpleObject {
     int value;

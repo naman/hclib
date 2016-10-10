@@ -30,7 +30,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 /*
- * hclib-forasync.h
+ * hclib-forasync.hpp
  *  
  *      Author: Vivek Kumar (vivekk@rice.edu)
  *      Ported from hclib

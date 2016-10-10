@@ -1,4 +1,4 @@
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 #include <iostream>
 using namespace std;
 

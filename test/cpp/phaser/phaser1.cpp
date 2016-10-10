@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 #include "phaser-api.h"
 
 /**

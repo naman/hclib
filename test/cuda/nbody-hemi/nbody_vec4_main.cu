@@ -22,7 +22,7 @@
 #include <time.h>
 #include <sys/time.h>
 
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 
 extern Vec4f centerOfMass(const Vec4f *bodies, int N);
 extern void allPairsForcesCuda(Vec4f *forceVectors, const Vec4f *bodies, int N, bool useShared);

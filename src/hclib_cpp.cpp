@@ -1,4 +1,4 @@
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 
 hclib_worker_state *hclib::current_ws() {
     return CURRENT_WS_INTERNAL;

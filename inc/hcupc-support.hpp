@@ -30,7 +30,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 /*
- * hcupc-support.h
+ * hcupc-support.hpp
  *  
  *      Author: Vivek Kumar (vivekk@rice.edu)
  */

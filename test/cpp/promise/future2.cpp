@@ -37,7 +37,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <assert.h>
 #include <unistd.h>
 
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 
 #define H1 256
 #define T1 33

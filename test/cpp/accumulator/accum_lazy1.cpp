@@ -36,7 +36,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <stdio.h>
 #include <assert.h>
 
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 
 void async_fct(void * arg) {
     accum_t * accum = (accum_t *) arg;

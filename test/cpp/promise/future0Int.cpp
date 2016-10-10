@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 
 
 int main(int argc, char ** argv) {

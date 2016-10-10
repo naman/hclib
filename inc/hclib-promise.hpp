@@ -2,7 +2,7 @@
 #define HCLIB_PROMISE_H
 
 #include "hclib-promise.h"
-#include "hclib_future.h"
+#include "hclib-future.hpp"
 
 namespace hclib {
 

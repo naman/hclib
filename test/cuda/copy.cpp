@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <cuda_runtime_api.h>
 
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 
 #define CHECK_CUDA(call) { \
     const cudaError_t err = (call); \

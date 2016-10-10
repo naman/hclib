@@ -13,7 +13,7 @@
  *
  */
 
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 #include <string.h>
 #include <float.h>
 

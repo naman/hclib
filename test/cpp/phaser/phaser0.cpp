@@ -33,7 +33,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <stdlib.h> 
 #include <math.h> 
 #include <sys/time.h>
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 #include "phaser-api.h"
 
 #define OUTERREPS 10

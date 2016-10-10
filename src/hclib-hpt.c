@@ -44,7 +44,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "hclib-hpt.h"
 #include "hclib-internal.h"
 #include "hclib-atomics.h"
-#include "hcupc-support.h"
+#include "hcupc-support.hpp"
 #include "hclib-cuda.h"
 
 // #define VERBOSE

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sys/time.h>
 #include <time.h>
-#include "hclib_cpp.h"
+#include "hclib.hpp"
 
 #define GAP_PENALTY -1
 #define TRANSITION_PENALTY -2

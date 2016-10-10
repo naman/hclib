@@ -29,7 +29,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 /*
- * hclib-async.h
+ * hclib-async.hpp
  *  
  *      Authors: Vivek Kumar (vivekk@rice.edu), Max Grossman (jmg3@rice.edu)
  *      Acknowledgments: https://wiki.rice.edu/confluence/display/HABANERO/People
@@ -38,8 +38,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <type_traits>
 
 #include "hclib-async-struct.h"
-#include "hcupc-support.h"
-#include "hclib_promise.h"
+#include "hcupc-support.hpp"
+#include "hclib-promise.hpp"
 
 #ifndef HCLIB_ASYNC_H_
 #define HCLIB_ASYNC_H_
