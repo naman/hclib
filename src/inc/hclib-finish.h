@@ -5,7 +5,7 @@
 
 typedef struct finish_t {
     struct finish_t* parent;
-    volatile int counter;
+    _Atomic int counter;
 #if HCLIB_LITECTX_STRATEGY
     hclib_future_t ** finish_deps;
 #endif /* HCLIB_LITECTX_STRATEGY */

@@ -69,7 +69,9 @@ void *unsupported_place_type_err(place_t *pl) {
 hclib_task_t *hpt_steal_task(hclib_worker_state *ws) {
     MARK_SEARCH(ws->id); // Set the state of this worker for timing
 
+#ifdef HUPCPP
     hcupc_reset_asyncAnyInfo(ws->id);
+#endif
 
     place_t *pl = ws->pl;
     while (pl != NULL) {
@@ -83,7 +85,9 @@ hclib_task_t *hpt_steal_task(hclib_worker_state *ws) {
             hclib_task_t *buff = deque_steal(&(d->deque));
             if (buff) { /* steal succeeded */
                 ws->current = get_deque_place(ws, pl);
+#ifdef HUPCPP
                 hcupc_check_if_asyncAny_stolen(buff, victim, ws->id);
+#endif
 
 #ifdef VERBOSE
                 printf("hpt_steal_task: worker %d successful steal from deque %p, pl %p, "
@@ -92,7 +96,9 @@ hclib_task_t *hpt_steal_task(hclib_worker_state *ws) {
                 return buff;
             }
         }
+#ifdef HUPCPP
         hcupc_inform_failedSteal(ws->id);
+#endif
 
         /* Nothing found in this place, go to the parent */
         pl = pl->parent;
@@ -125,7 +131,9 @@ hclib_task_t *hpt_pop_task(hclib_worker_state *ws) {
                    "%d\n", ws->id ,current, current->pl, current->pl->level);
 #endif
             ws->current = current;
+#ifdef HUPCPP
             hcupc_check_if_asyncAny_pop(buff, ws->id);
+#endif
             return buff;
         }
         if (downward) {
@@ -283,7 +291,7 @@ hc_deque_t *get_deque_hpt(hclib_worker_state *ws, place_t *pl) {
 
 }
 
-int deque_push_place(hclib_worker_state *ws, place_t *pl, void *ele) {
+int deque_push_place(hclib_worker_state *ws, place_t *pl, hclib_task_t *ele) {
     hc_deque_t *deq = get_deque_place(ws, pl);
     return deque_push(&deq->deque, ele);
 }

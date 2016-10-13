@@ -34,7 +34,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *      Author: Vivek Kumar (vivekk@rice.edu)
  */
-
+#if 0 // UNUSED
 #include "hclib-internal.h"
 #include "hclib-atomics.h"
 #include "hcupc-support.hpp"
@@ -325,3 +325,4 @@ void check_if_hcupc_distributed_futures(hclib_future_t **future_list) {
 }
 
 
+#endif  // UNUSED
